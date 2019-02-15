@@ -71,10 +71,12 @@ def getNetworkDevices(ticket):
 	#convert data to json format.
 	r_json=response.json()
 	
+	count=0
 	#Iterate through network device data and print the id and series name of each device
 	for i in r_json["response"]:
 		print(i["id"] + "   " + '{:53}'.format(i["series"]) + "  " + i["reachabilityStatus"])
-		
+		count+=1
+	print(count)
 
 
 theTicket=getTicket()
