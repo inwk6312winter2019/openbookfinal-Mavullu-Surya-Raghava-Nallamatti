@@ -67,3 +67,8 @@ print (json.dumps(response.json(), indent=4, separators=(',', ': ')))
 r_resp=response.json()
 
 print(r_resp["response"][0]["hostIp"])
+
+
+
+print({(r_resp["response"][0]["hostType"],r_resp["response"][0]["hostIp"]):r_re$
+
